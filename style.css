@@ -1,0 +1,45 @@
+@import url("https://fonts.googleapis.com/css?family=Nanum+Gothic:400,700");
+
+html,
+body {
+  font-family: "Nanum Gothic", sans-serif;
+  height: 100%;
+  /* Spraking Purple */
+  background-color: rgb(56, 0, 116);
+}
+
+#demo-container {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#demo {
+  color: rgb(230, 230, 230);
+  font-size: 15vh;
+  font-weight: 800;
+  width: 90vw;
+  text-align: center;
+}
+
+.caret {
+  border-left: 0.05em solid grey;
+  animation: caret 1s steps(1) infinite;
+}
+
+.blink {
+  animation: bounce 1s step-end infinite;
+}
+
+@keyframes caret {
+  50% {
+    border-color: transparent;
+  }
+}
+
+@keyframes bounce {
+  50% {
+    border-color: transparent;
+  }
+}
