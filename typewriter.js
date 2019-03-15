@@ -53,7 +53,7 @@ function write() {
 }
 
 // Init
-write();
+setTimeout(write, 300);
 
 // Loop
 setInterval(function() {
